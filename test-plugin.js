@@ -3,22 +3,18 @@ var conversation;
 function unassign() {
   Front.unassign(conversation);
 }
-
 function toggleArchive() {
   Front.toggleArchive(conversation);
 }
-
 function toggleTrashed() {
   Front.toggleTrashed(conversation);
 }
-
 function reply() {
   Front.reply({
     body: 'Template reply',
     subject: 'Template subject',
   }, false, conversation);
 }
-
 function alertDialog() {
   Front.dialog('alert', {
     title: 'I\'m an alert dialog',

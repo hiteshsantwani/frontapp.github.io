@@ -27,7 +27,6 @@ function alertDialog() {
     console.log('Alert closed');
   });
 }
-
 function confirmDialog() {
   Front.dialog('confirm', {
     title: 'I\'m a confirm dialog',
@@ -41,7 +40,6 @@ function confirmDialog() {
       console.log('User cancelled');
   });
 }
-
 function promptDialog() {
   Front.dialog('prompt', {
     title: 'I\'m a prompt dialog',
@@ -53,7 +51,6 @@ function promptDialog() {
       console.log('User cancelled');
   });
 }
-
 function fetchTeammates() {
   Front.fetchAllowedTeammates(function (teammates) {
     if (!teammates)
@@ -62,7 +59,6 @@ function fetchTeammates() {
     console.log(teammates);
   });
 }
-
 function fetchInboxes() {
   Front.fetchInboxes(function (inboxes) {
     if (!inboxes)
@@ -71,7 +67,6 @@ function fetchInboxes() {
     console.log(inboxes);
   });
 }
-
 Front.on('conversation', function (data) {
   console.log('Conversation', data.conversation);
   console.log('Contact', data.contact);
